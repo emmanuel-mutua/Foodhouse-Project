@@ -3,31 +3,73 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: grayish-white;
+  --background-start-rgb: 245, 245, 245; 
+  --background-end-rgb: 245, 245, 245;  
+  --primary-color-rgb: 250, 204, 21; 
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 20, 20, 20; 
+    --background-end-rgb: 0, 0, 0;     
   }
 }
 
+/* Base Styles */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
+      rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    );
 }
 
+/* Custom Utilities */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .bg-primary {
+    background-color: rgb(var(--primary-color-rgb));
+  }
+  .text-primary {
+    color: rgb(var(--primary-color-rgb));
+  }
+  .border-primary {
+    border-color: rgb(var(--primary-color-rgb));
+  }
+  .text-yellow {
+    color: rgb(var(--primary-color-rgb));
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f100;
+  border-radius: 10px;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(13deg, #d6170a, #ebb727);
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #f0c44d;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #17c6e210;
+  border-radius: 10px;
 }

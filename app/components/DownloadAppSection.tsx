@@ -1,4 +1,4 @@
-// pages/index.tsx
+
 import Image from 'next/image';
 import foodAppImage from '../images/foodApp.png'; 
 import googlePlay from '../images/googleplay.png';

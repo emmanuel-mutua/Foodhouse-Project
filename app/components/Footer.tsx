@@ -2,14 +2,6 @@
 const Footer = () => {
     return (
       <footer className="bg-gray-800 text-white py-12 p-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Subscribe Our Newsletter</h2>
-          <p className="mt-2 text-gray-400">Subscribe on our newsletter to get our news</p>
-          <div className="mt-4 flex justify-center">
-            <input type="email" placeholder="Your email address..." className="px-4 py-2 rounded-l-md"/>
-            <button className="px-6 py-2 bg-primary text-white rounded-r-md">Subscribe</button>
-          </div>
-        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-4">FoodHouse</h3>

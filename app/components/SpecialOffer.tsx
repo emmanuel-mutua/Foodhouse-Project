@@ -3,12 +3,12 @@ import specialOfferImage from '../images/specialOffer.png';
 
 const SpecialOffer = () => {
     return (
-        <section className="flex flex-col lg:flex-row justify-between items-center bg-gray-100 h-screen">
+        <section className="w-4/5 flex flex-col lg:flex-row justify-between items-center bg-gray-100 h-screen">
             <div className="flex-1 max-w-md flex flex-col justify-center lg:text-left mb-8 lg:mb-0 lg:mr-12">
-                <button className="mt-6 px-6 py-2 bg-primary text-white text-lg rounded-md">
+                <button className="mt-3 px-6 py-2 bg-primary text-white text-lg rounded-md">
                     -50%
                 </button>
-                <h1 className="text-5xl font-bold text-gray-800">
+                <h1 className="text-10xl font-bold text-gray-800">
                     Our Special Offer<span className="text-yellow-500">.</span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-600">

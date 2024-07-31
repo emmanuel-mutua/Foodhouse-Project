@@ -17,9 +17,9 @@ export default function Home() {
       <PopularFoods />
       <SpecialOffer />
       <BestOffer/>
-      <DownloadAppSection />
       <Services/>
       <Testimonial/>
+      <DownloadAppSection />
       <Newsletter/>
       <Footer />
     </main>

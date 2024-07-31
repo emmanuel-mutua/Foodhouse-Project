@@ -3,9 +3,13 @@ import React from 'react';
 const Newsletter = () => {
   return (
     <div className="w-full flex items-center justify-center py-10 bg-gray-50">
-      <div className="w-full max-w-2xl px-5 py-10 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold text-center mb-6">Subscribe Our Newsletter</h2>
+      <div className="w-full max-w-2xl px-5 py-10 rounded-lg">
+        <h2 className="text-4xl font-bold text-center mb-6">Subscribe Our Newsletter</h2>
         <p className="text-center mb-6">Subscribe to our newsletter to get our news</p>
+    
+      </div>
+
+      <div>
         <form className="flex flex-row w-full space-x-2">
           <input
             type="email"
@@ -19,7 +23,8 @@ const Newsletter = () => {
             Subscribe
           </button>
         </form>
-      </div>
+        </div>
+
     </div>
   );
 };

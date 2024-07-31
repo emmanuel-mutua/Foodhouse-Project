@@ -6,7 +6,7 @@ import sampleImage from "../images/person.jpeg"
 const Testimonial = () => {
   return (
     <div className="w-full py-16 bg-gray-50 flex items-center justify-center">
-      <div className="w-full max-w-5xl px-5 py-10 bg-white rounded-lg shadow-lg text-center">
+      <div className="w-full max-w-5xl px-5 py-10 rounded-lg text-center">
         <h3 className="text-sm font-semibold text-gray-500">Testimonial</h3>
         <h2 className="text-4xl font-bold text-gray-800 mb-6">What Our Clients Say</h2>
         <div className="flex justify-center mb-6">
@@ -16,10 +16,10 @@ const Testimonial = () => {
         </div>
         <p className="mb-6 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div className="flex justify-center items-center mb-6">
-          <div className="flex -space-x-4">
+          <div className="flex -space-x-0.2">
             <Image src={sampleImage} alt="Client 1" width={48} height={48} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
-            <Image src={sampleImage} alt="Client 2" width={48} height={48} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
-            <Image src={sampleImage} alt="Client 3" width={48} height={48} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
+            <Image src={sampleImage} alt="Client 2" width={60} height={60} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
+            <Image src={sampleImage} alt="Client 3" width={60} height={60} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
             <Image src={sampleImage} alt="Client 4" width={48} height={48} className="w-12 h-12 rounded-full border-2 border-white shadow-sm"/>
           </div>
         </div>
